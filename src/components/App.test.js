@@ -9,3 +9,4 @@ describe('App',()=>{
      expect(app.find('h2').text()).toEqual('Your mental shortcuts');
  })
 });
+    
