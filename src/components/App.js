@@ -5,7 +5,7 @@ class App extends Component{
     render() {
         return (
             <div>
-                      <h2>Your mental test this for CI</h2>
+                      <h2>Your mental test this for CI second time</h2>
             </div>
         )
     }
