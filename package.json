@@ -2,6 +2,7 @@
   "name": "mentalshortcuts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://blooming-tor-31315.herokuapp.com/",
   "dependencies": {
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
