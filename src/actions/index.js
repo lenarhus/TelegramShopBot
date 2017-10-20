@@ -5,4 +5,4 @@ export function setShortcut(shortcut){
       type: SET_SHORTCUT,
       shortcut:shortcut 
   };
-}
+} 
