@@ -1,5 +1,7 @@
 import React,{ Component } from 'react';
-import shortcuts from '../data/shortcuts.json'
+import { Link } from 'react-router-dom';
+import shortcuts from '../data/shortcuts.json';
+
 class ShortcutList extends Component{
     render(){
         return(
@@ -7,7 +9,9 @@ class ShortcutList extends Component{
                 {
                  shortcuts.map(shortcut=>{
                      return(
+                         <Link to='/shortcut'>
                          <h4 key={shortcut.id}>{shortcut.title} </h4>
+                         </Link>
                      )
                  })                    
                 }
