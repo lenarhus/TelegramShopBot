@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Amazing JS libraries for your next project!",
+    "id": 0,
+    "cards": [
+      { "id": 0, "prompt": "MVC approach to create large-scale applications", "answer": "Angular" },
+      { "id": 1, "prompt": "provides the model portion of MVC", "answer": "backbone" },
+      { "id": 2, "prompt": " library used primarily for Document Object Model (DOM) manipulation", "answer": "JQuery" },
+      { "id": 3, "prompt": " library that consists over 100 functions-These functions will help you manipulate arrays, objects and other functions.", "answer": "underscore" },
+      { "id": 4, "prompt": "for graphing and visualization", "answer": "D3.js" },
+      { "id": 5, "prompt": "a library for building user interfaces", "answer": "react.js" },
+      { "id": 6, "prompt": "a library follows many of the same principals that Ruby on Rails has and highly opinionated, flexible, and prefers convention over configuration.", "answer": "Ember" },
+      { "id": 7, "prompt": "HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web", "answer": "bootstrap" },
+      { "id": 8, "prompt": "a TypeScript-based open-source front-end framework. It’s a complete rewrite of its first version", "answer": "Angular 2" },
+      { "id": 9, "prompt": "forward-thinking framework which uses a lot of newer EcmaScript features and encourages  to write your code using these new features.", "answer": "Aurelia" }
+    ]
+  },
+  {
+    "title": "Some Questions on CI/CI-tools ",
+    "id": 1,
+    "cards": [
+      { "id": 0, "prompt": "helps to automate the non-human part of software development process, with continuous integration and facilitating technical aspects of continuous delivery", "answer": "Jenkins" },
+      { "id": 1, "prompt": " development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.", "answer": "Continous Integration (CI)" },
+      { "id": 2, "prompt": "one Metaphorical way of thinking about jobs and builds in jenkins", "answer": "ice cube tray vs ice cubes-> ice blocks -are builds and the tray can be compared to the job which creates builds " },
+      { "id": 3, "prompt": "difference between CI and continous delivery", "answer": "Continuous Delivery is described as the logical evolution of continuous integration: Always be able to put a product into production! ... By employing good work item definitions, effective automated testing, and continuous integration a team can be in a position to automate the codebase's delivery to any given environment." },
+      { "id": 4, "prompt": "Another tool to implement Continous integration", "answer": "Travis CI" },
+      { "id": 5, "prompt": "best way to create a repository in heroku", "answer": "run command 'heroku create" },
+      { "id": 6, "prompt": "New term for build trigger -build when a change is pushed to github( in jenkins )", "answer": "GitHub hook trigger for GITScm polling." }
+    ]
+  }
+]
