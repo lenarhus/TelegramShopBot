@@ -5,7 +5,7 @@ class App extends Component{
     render() {
         return (
             <div>
-                      <h2>This title should be shown in the deployed app when you push the code to your github repo-elevnth!</h2>
+                      <h2>This title should be shown in the deployed app when you push the code to your github repo- b4 the next!</h2>
                       <hr/>
                       <ShortcutList/>
             </div>
