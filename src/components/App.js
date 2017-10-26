@@ -5,7 +5,7 @@ class App extends Component{
     render() {
         return (
             <div>
-                      <h2>Your mental test this for CI seventh time</h2>
+                      <h2>This title should be shown in the deployed app when you push the code to your github repo!</h2>
                       <hr/>
                       <ShortcutList/>
             </div>
