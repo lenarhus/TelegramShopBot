@@ -11,7 +11,7 @@
       { "id": 5, "prompt": "a library for building user interfaces", "answer": "react.js" },
       { "id": 6, "prompt": "a library follows many of the same principals that Ruby on Rails has and highly opinionated, flexible, and prefers convention over configuration.", "answer": "Ember" },
       { "id": 7, "prompt": "HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web", "answer": "bootstrap" },
-      { "id": 8, "prompt": "a TypeScript-based open-source front-end framework. It’s a complete rewrite of its first version", "answer": "Angular 2" },
+      { "id": 8, "prompt": "TypeScript-based open-source front-end framework which is a complete rewrite of its first version", "answer": "Angular 2" },
       { "id": 9, "prompt": "forward-thinking framework which uses a lot of newer EcmaScript features and encourages  to write your code using these new features.", "answer": "Aurelia" }
     ]
   },
