@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 import App from './components/App';
 import Shortcut from './components/Shortcut';
+import ShortcutForm from './components/ShortcutForm';
 import  { setShortcut } from './actions';
 import './index.css';
 
@@ -20,6 +21,7 @@ ReactDOM.render(
                     <Switch> 
                         <Route exact path= "/" component={App} />
                         <Route exact path= "/Shortcut" component={Shortcut} />
+                        <Route exact path="/stack_form" component={ShortcutForm}/>
                     </Switch>
                 </BrowserRouter>
             </Provider>,
