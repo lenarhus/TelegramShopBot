@@ -1,4 +1,5 @@
 export const SET_SHORTCUT ='SET_SHORTCUT';
+export const LOAD_SHORTCUTS = 'LOAD_SHORTCUTS';
 
 export function setShortcut(shortcut){
   return {
@@ -6,3 +7,11 @@ export function setShortcut(shortcut){
       shortcut:shortcut 
   };
 } 
+
+export function loadShortcuts(shortcuts){
+  return{
+    type: LOAD_SHORTCUTS,
+    shortcuts
+
+  }
+}

@@ -8,7 +8,7 @@ class ShortcutList extends Component{
     render(){
         console.log('shortcutlist props',this.props);
         return(
-            <div>
+            <div>   
                 {
                  shortcuts.map(shortcut=>{
                      return(

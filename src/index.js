@@ -7,6 +7,7 @@ import rootReducer from './reducers';
 import App from './components/App';
 import Shortcut from './components/Shortcut';
 import  { setShortcut } from './actions';
+import './index.css';
 
 const store = createStore(rootReducer);
 store.subscribe(()=>console.log('store',store.getState()));
