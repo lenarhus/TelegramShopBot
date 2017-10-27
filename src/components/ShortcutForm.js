@@ -20,7 +20,7 @@ addCard(){
 
     render()    {
 
-        console.log('ShortcutForm state', this.state);
+        console.log('ShortcutForm state', this.state);  
 
         return (
             <div>
