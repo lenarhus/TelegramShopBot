@@ -2,15 +2,20 @@ import React,{ Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import shortcuts from '../data/shortcuts.json';
-import { setShortcut } from '../actions';
+import { setShortcut ,loadShortcuts } from '../actions';
 
 class ShortcutList extends Component{
+    componentDidMount(){
+        this.props.loadShortcuts(shortcuts);
+    }
+
+
     render(){
-        console.log('shortcutlist props',this.props);
+      
         return(
-            <div>
+            <div>   
                 {
-                 shortcuts.map(shortcut=>{
+                 this.props.shortcuts.map(shortcut=>{
                      return(
                          <Link to='/shortcut'
                           key={shortcut.id} 
@@ -25,5 +30,9 @@ class ShortcutList extends Component{
     }
 }
 
-
-export default  connect(null,{ setShortcut})(ShortcutList);
+function mapStateToProps(state){
+    return{
+        shortcuts:state.shortcuts
+    };
+}
+export default  connect(mapStateToProps,{ setShortcut, loadShortcuts})(ShortcutList);
