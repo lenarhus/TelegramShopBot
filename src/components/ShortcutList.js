@@ -6,6 +6,7 @@ import { setShortcut ,loadShortcuts } from '../actions';
 
 class ShortcutList extends Component{
     componentDidMount(){
+        if (this.props.shortcuts.length === 0)//to make sure that we are only loading stacks for once
         this.props.loadShortcuts(shortcuts);
     }
 

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { SET_SHORTCUT,LOAD_SHORTCUTS } from  '../actions';
+import { SET_SHORTCUT,LOAD_SHORTCUTS, ADD_SHORTCUT } from  '../actions';
 
 function shortcut(state={},action){
     switch(action.type){
@@ -15,6 +15,8 @@ function shortcuts(state =[],action ){
     switch(action.type){
         case LOAD_SHORTCUTS:
          return action.shortcuts;
+        case ADD_SHORTCUT:
+         return[...state,{...action.shortcut,id: state.length}];
         default:
           return state;
     }
