@@ -7,12 +7,7 @@ class App extends Component{
         return (
             <div>
 improve-loading-shortcuts
-                      <h2>Now componentdid mount we will work on the newest branch itself !</h2>
-
-
-                    
-    
-
+                      <h2>Mental Shortcuts</h2>
                       <hr/>
                       <ShortcutList/>
                       <hr/>
