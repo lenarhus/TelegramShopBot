@@ -6,3 +6,8 @@ export const shortcut= {
          {id :1, prompt: 'test prompt 2', answer:'test answer'}
          ]
                       };
+
+                      
+                      
+export const shortcuts = [shortcut]
+                      

@@ -5,7 +5,7 @@ import {Form, FormGroup,FormControl,ControlLabel,Button } from 'react-bootstrap'
 import { addShortcut} from '../actions';
 
 
-class ShortcutForm extends Component{
+export class ShortcutForm extends Component{
     constructor(){
         super();
         this.state={
