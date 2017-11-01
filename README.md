@@ -10,7 +10,7 @@ or explicitly pass "store" as a prop to "Connect(ShortcutList)".
 above error was encountered when running the app.test.js file with the following code:
 
 
-`
+```javascript
 import React from 'react';
 import { mount } from 'enzyme';
 import App from './App';
@@ -19,7 +19,7 @@ describe('App',()=>{
     const app = mount (<App/>);
     
 })
-`
+```
 
 Above app component has an inner child called shortcutlist -a connected redux component so in order for us to mount this app
 we need to provide things that redux provide (like the store) if you look at the index.js file we were providing store to ever
@@ -28,7 +28,7 @@ of store what as an alternative we do is -shallow render just like below:
 
 
 
-`
+```javascript
 import React from 'react';
 import { mount } from 'enzyme';
 import App from './App';
@@ -37,7 +37,7 @@ describe('App',()=>{
     const app = mount (<App/>);
     
 })
-`
+```
 
  
 ### Error 2
@@ -61,7 +61,7 @@ we can define as shown below:
 
 
 
-`
+```javascript
 const props = {
  shortcut: {
      id:0,   title:'test title', cards:[
@@ -75,7 +75,7 @@ const props = {
 
 describe ('Shortcut', ()=>{
     const shortcut = shallow(<Shortcut {...props}/>);
-`
+```
 
 
 
@@ -89,18 +89,18 @@ specified which h4 tag
 
 
 
-`
+```javascript
   it ('renders the form title ',()=>{
         expect(shortcutForm.find('h4').text()).toEqual('Create a New shortcut')
   });
-`
+```
 
 
 we can change the above code to the following or add at(1) to the h4 tag like below:
 
 
-`
+```javascript
 it ('renders the form title ',()=>{
             expect(shortcutForm.find('h4').at(1).text()).toEqual(' Create a new shortcut')
     });
-`
+```
