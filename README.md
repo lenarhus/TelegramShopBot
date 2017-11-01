@@ -20,14 +20,24 @@ describe('App',()=>{
 })
 
 
-`th
+`
 
 Above app component has an inner child called shortcutlist -a connected redux component so in order for us to mount this app
 we need to provide things that redux provide (like the store) if you look at the index.js file we were providing store to ever
 y single component by wrapping a provider but in our app.test.js we are just mounting the component so it wont have that context 
 of store what as an alternative we do is -shallow render just like below:
+
+`import React from 'react';
+import { mount } from 'enzyme';
+import App from './App';
+
+describe('App',()=>{
+    const app = mount (<App/>);
+    
+})`
  
 ### Error 2
+
 Above error was fixed by using shallow function ,why does the shortcut.test.js with the above code still gives a similar error
 
 Becz before we could shallow render the inner connected shortcutlist but in the case of shortcut  is a whole component is a
@@ -59,7 +69,7 @@ we can define as shown below:
 
 describe ('Shortcut', ()=>{
     const shortcut = shallow(<Shortcut {...props}/>);
-    `
+`
 
 ### Error 4 ShortcutForm › renders the form title
 
