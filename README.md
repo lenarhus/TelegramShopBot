@@ -30,11 +30,11 @@ of store what as an alternative we do is -shallow render just like below:
 
 ```javascript
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import App from './App';
 
 describe('App',()=>{
-    const app = mount (<App/>);
+    const app = shallow (<App/>);
     
 })
 ```
