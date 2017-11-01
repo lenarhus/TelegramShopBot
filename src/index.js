@@ -21,7 +21,7 @@ ReactDOM.render(
                     <Switch> 
                         <Route exact path= "/" component={App} />
                         <Route exact path= "/Shortcut" component={Shortcut} />
-                        <Route exact path="/stack_form" component={ShortcutForm}/>
+                        <Route exact path="/shortcut_form" component={ShortcutForm}/>
                     </Switch>
                 </BrowserRouter>
             </Provider>,

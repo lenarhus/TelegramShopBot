@@ -5,7 +5,7 @@ import Card from './Card';
 
 export class Shortcut extends Component{
     render(){
-        const {title, cards} =this.props.shortcut;
+        const {title, cards} = this.props.shortcut;  
         return(
             <div>
                 <Link className='link-home'to='/'>
@@ -28,7 +28,7 @@ export class Shortcut extends Component{
 
 function mapStateToProps(state){
 
-    return { Shortcut: state.Shortcut}
+    return { shortcut: state.shortcut}
 
 }
 

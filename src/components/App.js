@@ -1,5 +1,5 @@
-import React,{ Component } from 'react';
-import { Link } from 'react-router-dom';    
+    import React,{ Component } from 'react';
+    import {Link} from 'react-router-dom';
 import ShortcutList from './ShortcutList';
 
 class App extends Component{
@@ -11,8 +11,7 @@ improve-loading-shortcuts
                       <hr/>
                       <ShortcutList/>
                       <hr/>
-                      <Link to='stack_form'><h4>Create a new Shortcut</h4></Link>
-
+                      <Link to ='shortcut_form'>  <h4>Create a new shortcut</h4></Link>  
             </div>
         )
     }
