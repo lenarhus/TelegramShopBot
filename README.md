@@ -1,6 +1,6 @@
-﻿#Identifying Errors and fixing them
+﻿# Identifying Errors and fixing them
 
-#Error 1
+### Error 1
 
 Invariant Violation: Could not find "store" in either the context or props of "Connect(ShortcutList)". 
 Either wrap the root component in a
@@ -27,7 +27,7 @@ we need to provide things that redux provide (like the store) if you look at the
 y single component by wrapping a provider but in our app.test.js we are just mounting the component so it wont have that context 
 of store what as an alternative we do is -shallow render just like below:
  
-#Error 2
+### Error 2
 Above error was fixed by using shallow function ,why does the shortcut.test.js with the above code still gives a similar error
 
 Becz before we could shallow render the inner connected shortcutlist but in the case of shortcut  is a whole component is a
@@ -38,7 +38,7 @@ simulate the environment in the shortcut test component
 
 we export the whole class and then import the shortcut from ./shortcut with in the pair of curly braces
 
-#Error 3 Shortcut › encountered a declaration exception
+### Error 3 Shortcut › encountered a declaration exception
 
     TypeError: Cannot match against 'undefined' or 'null'.
 
@@ -61,7 +61,7 @@ describe ('Shortcut', ()=>{
     const shortcut = shallow(<Shortcut {...props}/>);
     `
 
- #Error 4 ShortcutForm › renders the form title
+### Error 4 ShortcutForm › renders the form title
 
     Method “text” is only meant to be run on a single node. 2 found instead.
 
