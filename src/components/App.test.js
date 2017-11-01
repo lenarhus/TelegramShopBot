@@ -9,7 +9,7 @@ describe ('App', ()=>{
         expect(app.find('h2').text()).toEqual('Mental Shortcuts') 
   });
  it ('renders the ShortcutList',()=>{
-     console.log(app.debug());
+    // console.log(app.debug());
      expect(app.find('Connect(ShortcutList)').exists()).toBe(true);
  })
 

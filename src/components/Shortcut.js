@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Card from './Card';
 
-class Shortcut extends Component{
+export class Shortcut extends Component{
     render(){
         const {title, cards} =this.props.shortcut;
         return(
@@ -28,7 +28,7 @@ class Shortcut extends Component{
 
 function mapStateToProps(state){
 
-    return { shortcut: state.shortcut}
+    return { Shortcut: state.Shortcut}
 
 }
 
