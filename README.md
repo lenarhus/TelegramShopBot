@@ -8,8 +8,9 @@ Either wrap the root component in a
 or explicitly pass "store" as a prop to "Connect(ShortcutList)".
 
 above error was encountered when running the app.test.js file with the following code:
-`
 
+
+`
 import React from 'react';
 import { mount } from 'enzyme';
 import App from './App';
@@ -18,8 +19,6 @@ describe('App',()=>{
     const app = mount (<App/>);
     
 })
-
-
 `
 
 Above app component has an inner child called shortcutlist -a connected redux component so in order for us to mount this app
@@ -27,14 +26,19 @@ we need to provide things that redux provide (like the store) if you look at the
 y single component by wrapping a provider but in our app.test.js we are just mounting the component so it wont have that context 
 of store what as an alternative we do is -shallow render just like below:
 
-`import React from 'react';
+
+
+`
+import React from 'react';
 import { mount } from 'enzyme';
 import App from './App';
 
 describe('App',()=>{
     const app = mount (<App/>);
     
-})`
+})
+`
+
  
 ### Error 2
 
@@ -44,19 +48,21 @@ Becz before we could shallow render the inner connected shortcutlist but in the 
 connected react component so even if we shallow render the shortcut the test runner would expect us to provide the 
 store 	object in either the context or the props so we do the application by the provider wrapper but this is how we 
 simulate the environment in the shortcut test component
-
-
 we export the whole class and then import the shortcut from ./shortcut with in the pair of curly braces
+
+
 
 ### Error 3 Shortcut › encountered a declaration exception
 
     TypeError: Cannot match against 'undefined' or 'null'.
 
 this is bcz props are not defined in the shortcut test component
-
 we can define as shown below:
 
-`const props = {
+
+
+`
+const props = {
  shortcut: {
      id:0,   title:'test title', cards:[
          {id:0,prompt: 'test prompt', answer:'test answer'},
@@ -71,6 +77,8 @@ describe ('Shortcut', ()=>{
     const shortcut = shallow(<Shortcut {...props}/>);
 `
 
+
+
 ### Error 4 ShortcutForm › renders the form title
 
     Method “text” is only meant to be run on a single node. 2 found instead.
@@ -78,13 +86,19 @@ describe ('Shortcut', ()=>{
 
 this error is thrown because the shortcutform has more than one h4 element therefore we will be getting the error as it is not 
 specified which h4 tag 
+
+
+
 `
   it ('renders the form title ',()=>{
         expect(shortcutForm.find('h4').text()).toEqual('Create a New shortcut')
   });
-
 `
+
+
 we can change the above code to the following or add at(1) to the h4 tag like below:
+
+
 `
 it ('renders the form title ',()=>{
             expect(shortcutForm.find('h4').at(1).text()).toEqual(' Create a new shortcut')
