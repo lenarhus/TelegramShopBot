@@ -7,7 +7,7 @@ class App extends Component{
         return (
             <div>
 improve-loading-shortcuts
-                      <h2>Mental Shortcuts Version 2</h2>
+                      <h2>Mental Shortcuts Version 2 branching v02</h2>
                       <hr/>
                       <ShortcutList/>
                       <hr/>
