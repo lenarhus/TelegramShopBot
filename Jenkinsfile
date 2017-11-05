@@ -1,4 +1,4 @@
-tage 'CI'
+stage 'CI'
 node {
 
     //notify('Started');
