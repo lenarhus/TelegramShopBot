@@ -1,4 +1,4 @@
-stage 'CI'
+s   tage 'CI'
 node {
 
     //notify('Started');
