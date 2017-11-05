@@ -1,7 +1,7 @@
 tage 'CI'
 node {
 
-
+    //notify('Started');
 
    // git branch: 'test01', 
     checkout scm
@@ -18,11 +18,10 @@ node {
           excludes: 'test-results/**', 
           includes: '**'
     
-    // test with PhantomJS for "fast" "generic" results
-    // on windows use: bat 'npm run test-single-run -- --browsers PhantomJS'
-    sh 'npm run test-single-run -- --browsers PhantomJS'
     
-    // archive karma test results (karma is configured to export junit xml files)
+    sh 'npm run test -- --coverage'
+    
+   
     step([$class: 'JUnitResultArchiver', 
           testResults: 'test-results/**/test-results.xml'])
           
@@ -36,3 +35,16 @@ def notify(status){
         <p>Check console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
     )
 }
+node{
+        notify('Deploy to Staging')
+}
+input 'Deploy to Staging?'
+
+stage name: 'Deploy' ,concurrency: 1
+
+node{
+    sh 'npm run-script build'
+    notify 'Mental_shortcuts Deployed!'
+}
+
+
