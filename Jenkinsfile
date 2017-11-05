@@ -44,7 +44,7 @@ stage name: 'Deploy' ,concurrency: 1
 
 node{
     sh 'npm run-script build'
-    notify 'Mental_shortcuts Deployed successfully!'
+    notify 'Mental_shortcuts version 02 Deployed successfully!'
 }
 
 
