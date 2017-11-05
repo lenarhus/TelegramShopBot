@@ -22,8 +22,8 @@ node {
     sh 'npm run test -- --coverage'
     
    
-    step([$class: 'JUnitResultArchiver', 
-          testResults: 'test-results/**/test-results.xml'])
+    //step([$class: 'JUnitResultArchiver', 
+      //    testResults: 'test-results/**/test-results.xml'])
           
 }
 
