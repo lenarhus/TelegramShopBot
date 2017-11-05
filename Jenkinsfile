@@ -8,21 +8,20 @@ node {
      //   url: 'https://github.com/NaveenDK/mentalshortcuts.git'
 
     // pull dependencies from npm
-    // on windows use: bat 'npm install'
     sh 'npm install'
 
     // stash code & dependencies to expedite subsequent testing
     // and ensure same code & dependencies are used throughout the pipeline
     // stash is a temporary archive
     stash name: 'everything', 
-          excludes: 'test-results/**', 
+          excludes: 'coverage/**', 
           includes: '**'
     
     
     sh 'npm run test -- --coverage'
     
       step([$class: 'JUnitResultArchiver', 
-          testResults: 'test-results/**/test-results.xml'])
+          testResults: 'coverage'])
     //step([$class: 'JUnitResultArchiver', 
       //    testResults: 'test-results/**/test-results.xml'])
           
