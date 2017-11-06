@@ -8,7 +8,7 @@ node {
      //   url: 'https://github.com/NaveenDK/mentalshortcuts.git'
 
     // pull dependencies from npm
-    // on windows use: bat 'npm install'
+
     sh 'npm install'
 
     // stash code & dependencies to expedite subsequent testing
@@ -19,11 +19,9 @@ node {
           includes: '**'
     
     
-    sh 'npm run test -- --coverage'
-    
-   
-    //step([$class: 'JUnitResultArchiver', 
-      //    testResults: 'test-results/**/test-results.xml'])
+       sh 'npm run test -- --coverage'
+
+    //sh 'npm run test:ci'
           
 }
 
