@@ -39,5 +39,4 @@ stage name: 'Deploy master' ,concurrency: 1
     notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
 
 
-}
-}
+}   
