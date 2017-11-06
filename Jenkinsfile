@@ -1,29 +1,18 @@
-stage 'CI'
-node {
+stage 'Build '
+
 
     //notify('Started');
 
    // git branch: 'test01', 
     checkout scm
-     //   url: 'https://github.com/NaveenDK/mentalshortcuts.git'
-
-    // pull dependencies from npm
+   // pull dependencies from npm
 
     sh 'npm install'
 
-    // stash code & dependencies to expedite subsequent testing
-    // and ensure same code & dependencies are used throughout the pipeline
-    // stash is a temporary archive
-    stash name: 'everything', 
-          excludes: 'test-results/**', 
-          includes: '**'
     
-    
-       sh 'npm run test -- --coverage'
-
-    //sh 'npm run test:ci'
-          
-}
+stage 'Unit Testing'
+     
+    sh 'npm run test -- --coverage'
 
 def notify(status){
     emailext (
@@ -33,16 +22,18 @@ def notify(status){
         <p>Check console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
     )
 }
-node{
+
         notify('Deploy to Staging')
-}
-input 'Deploy to Staging?'
 
-stage name: 'Deploy' ,concurrency: 1
+input 'Deploy to Staging after merging?'
 
-node{
+stage name: 'Deploy master' ,concurrency: 1
+
+  
+    sh 'git https://github.com/NaveenDK/mentalshortcuts.git'
+    sh 'npm install'
     sh 'npm run-script build'
     notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
-}
+
 
 
