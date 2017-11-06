@@ -8,7 +8,8 @@ node{
    // pull dependencies from npm
 
     sh 'npm install'
-
+}
+node{
     
 stage 'Unit Testing'
      
@@ -26,7 +27,9 @@ def notify(status){
         notify('Deploy to Staging')
 
 input 'Deploy to Staging after merging?'
+}
 
+node{
 stage name: 'Deploy master' ,concurrency: 1
 
   
@@ -36,5 +39,5 @@ stage name: 'Deploy master' ,concurrency: 1
     notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
 
 
-
+}
 }
