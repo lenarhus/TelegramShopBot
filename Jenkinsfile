@@ -1,4 +1,4 @@
-stage 'CI'
+stage 'Building'
 node {
 
     checkout scm
