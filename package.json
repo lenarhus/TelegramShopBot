@@ -12,14 +12,11 @@
     "react-scripts": "1.0.14",
     "redux": "^3.7.2"
   },
-  "jest": {
-    "testResultsProcessor": "./node_modules/jest-junit"
-  },
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ci": "react-scripts test --testResultsProcessor ./node_modules/jest-junit",
     "eject": "react-scripts eject"
   },
   
@@ -27,7 +24,8 @@
   "devDependencies": {
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.2",
-    "jest-junit-reporter": "^1.1.0",
+   
+
     "react-test-renderer": "^16.0.0"
   }
 }
