@@ -15,14 +15,13 @@ node {
 stage 'Testing'
 
 
-sh 'npm test -- --coverage'
-
-
 node {
-    notify("Deploy to staging?")
+sh 'npm test -- --coverage'
+notify("Deploy to staging?")
+input 'Deploy to staging?'
 }
 
-input 'Deploy to staging?'
+
 
 // limit concurrency so we don't perform simultaneous deploys
 // and if multiple pipelines are executing, 
