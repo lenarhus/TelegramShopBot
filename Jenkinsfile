@@ -28,8 +28,8 @@ input 'Deploy to staging?'
 // newest is only that will be allowed through, rest will be canceled
 stage name: 'Deploy to staging', concurrency: 1
 node {
-    sh 'git https://github.com/NaveenDK/mentalshortcuts.git'
-    sh 'npm install'
+    //sh 'git https://github.com/NaveenDK/mentalshortcuts.git'
+   // sh 'npm install'
     sh 'npm run-script build'
     notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
     
