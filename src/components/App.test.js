@@ -6,7 +6,7 @@ describe('App',()=>{
     const app = shallow (<App/>);
 
     it('renders the title of the app',()=>{
-            expect(app.find('h2').text()).toEqual('Mental Shortcuts 2')
+            expect(app.find('h2').text()).toEqual('Mental Shortcuts 002')
     });
 
     it ('renders a link to create a new stack',()=>{

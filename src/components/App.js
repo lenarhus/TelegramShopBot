@@ -7,7 +7,7 @@ class App extends Component{
         return (
             <div>
   
-                      <h2>Mental Shortcuts 2</h2>
+                      <h2>Mental Shortcuts 002</h2>
                       <hr/>
                       <ShortcutList/>
                       <hr/>
