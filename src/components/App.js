@@ -6,7 +6,7 @@ class App extends Component{
     render() {
         return (
             <div>
-improve-loading-shortcuts
+  
                       <h2>Mental Shortcuts</h2>
                       <hr/>
                       <ShortcutList/>
