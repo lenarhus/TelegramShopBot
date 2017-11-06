@@ -1,5 +1,5 @@
 stage 'Build '
-
+node{
 
     //notify('Started');
 
@@ -37,3 +37,4 @@ stage name: 'Deploy master' ,concurrency: 1
 
 
 
+}
