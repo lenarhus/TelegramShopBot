@@ -6,6 +6,8 @@ import Footer from './Footer';
 
 
 
+
+
 class App extends Component{
     render() {
         return (
@@ -17,9 +19,8 @@ class App extends Component{
                       <hr/>
                       <Link to ='shortcut_form'>  <h4>Create a new shortcut</h4></Link>  
                       <hr/>
-                      <hr/>
                       <Footer/>
-
+                    
             </div>
         )
     }
