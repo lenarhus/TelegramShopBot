@@ -29,7 +29,11 @@ input 'Deploy to staging?'
 stage name: 'Deploy to staging', concurrency: 1
 node {
     //sh 'git https://github.com/NaveenDK/mentalshortcuts.git'
-   // sh 'npm install'
+   // sh 'npm install'''
+   
+    git branch: 'master', 
+        url:  'https://github.com/NaveenDK/mentalshortcuts.git'
+        sh 'npm install'
     sh 'npm run-script build'
     notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
     
