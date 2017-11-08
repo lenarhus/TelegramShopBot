@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
 import {Link} from 'react-router-dom';
 import ShortcutList from './ShortcutList';
+import Footer from './Footer';
 
 
 
@@ -21,6 +22,7 @@ class App extends Component{
                       <hr/>
                       <hr/>
                       <hr/>
+                      <Footer/>
                    
                      
                     
