@@ -34,8 +34,8 @@ node {
     git branch: 'master', 
         url:  'https://github.com/NaveenDK/mentalshortcuts.git'
         sh 'npm install'
-    sh 'npm run-script build'
-    notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
+        sh 'npm run-script build'
+        notify 'Mental_shortcuts version 02 test webhook Deployed successfully!'
     
 }
 
