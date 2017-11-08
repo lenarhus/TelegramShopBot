@@ -18,8 +18,8 @@ class App extends Component{
                       <Link to ='shortcut_form'>  <h4>Create a new shortcut</h4></Link>  
                       </div>
                       <hr/>
-                      <hr/>
-                      <Footer/>
+                     <Footer/>
+                   
                     
                      
                     
