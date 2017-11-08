@@ -18,7 +18,17 @@ class App extends Component{
                       <hr/>
                       <ShortcutList/>
                       <hr/>
+                      <hr/>
+                      <hr/>
+                      <hr/>
+                      <hr/>
+                      <hr/>
+                      <hr/>
+                      <hr/>
+                      <hr/>
+                      <div className="card">
                       <Link to ='shortcut_form'>  <h4>Create a new shortcut</h4></Link>  
+                      </div>
                       <hr/>
                       <hr/>
                     
