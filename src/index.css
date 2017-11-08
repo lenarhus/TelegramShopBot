@@ -1,6 +1,8 @@
 body{
         padding:5%;
         text-align: center;
+        color: rgb(0, 162, 255);
+        background-color: rgba(235, 233, 142, 0.836);
 }
 .link-home{
  position:absolute;
@@ -9,12 +11,13 @@ body{
 }
 
 .card{
-    border : 1px solid lightgray;
+    border : 1px solid lightgray;       
     border-radius: 5px;
     margin:10px;
     padding:10px;
     font-size:16px;
     cursor:pointer;
+    color:rgb(38, 37, 41);
 
 }
 
