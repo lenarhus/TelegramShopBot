@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import {Link} from 'react-router-dom';
 import ShortcutList from './ShortcutList';
-import Footer from './Footer';
+
 
 
 
@@ -21,9 +21,7 @@ class App extends Component{
                       <Link to ='shortcut_form'>  <h4>Create a new shortcut</h4></Link>  
                       <hr/>
                       <hr/>
-                      <hr/>
-                      <Footer/>
-                   
+                    
                      
                     
             </div>
