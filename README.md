@@ -1203,12 +1203,23 @@ describe('ShortcutForm',()=>{
 
 
 
+
+
+
 ### Testing the action creators/ actions and Reducers
 
 These are all pure functions -which gives a unique output for a particular input so just having a look at the Functions
 would explain it s purpose:
 
 #### actions/index.test.js
+
+
+
+
+
+
+
+
 ```javascript
 import * as actions from './index';
 import { shortcut, shortcuts } from '../data/fixtures';
