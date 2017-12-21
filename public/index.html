@@ -28,6 +28,26 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script>
+            var log = document.querySelector("textarea");
+
+            document.querySelector("button").onclick = function() {
+                console.log("Send post message");
+
+                logMessage("Sending post message from web..");
+                window.postMessage("Post message from web", "*");
+            }
+
+            document.addEventListener("message", function(event) {
+                console.log("Received post message", event);
+
+                logMessage(event.data);
+            }, false);
+
+            function logMessage(message) {
+                log.append((new Date()) + " " + message + "\n");
+            }
+    </script>
     <div id="root"></div>
     <button type="button">Upload Image</button> 
 
