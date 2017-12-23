@@ -3,17 +3,27 @@ import {Button } from 'react-bootstrap';
 
 
 class camButton extends React.Component{
-    handleClick(){
-        window.postMessage("hello world!");
+    handleClickCamera(){
+        window.postMessage("camera!");
+
+    }
+    handleClickGallery(){
+        window.postMessage("gallery!");
 
     }
 
     render(){
         return(
+            <div>
             <Button onClick={(e)=>
-            this.handleClick(e)}>
-            Camera
+            this.handleClickCamera(e)}>
+               Open Camera
             </Button>
+            <Button onClick={(e)=>
+            this.handleClickGallery(e)}>
+                Open Gallery
+            </Button>
+            </div>
         )
     }
 }
