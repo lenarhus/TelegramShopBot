@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  WebView,
-  TouchableHighlight,
-  Button
-} from 'react-native';
+import {Button } from 'react-bootstrap';
 
 
 class camButton extends React.Component{
@@ -18,7 +10,7 @@ class camButton extends React.Component{
 
     render(){
         return(
-            <Button onPress={(e)=>
+            <Button onClick={(e)=>
             this.handleClik(e)}>
             Camera
             </Button>
