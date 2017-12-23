@@ -8,7 +8,7 @@ import {
   TouchableHighlight,
   Button
 } from 'react-native';
-import {ImagePicker} from 'expo';
+
 
 class camButton extends React.Component{
     handleClick(){
