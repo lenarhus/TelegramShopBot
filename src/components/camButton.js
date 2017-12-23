@@ -11,7 +11,7 @@ class camButton extends React.Component{
     render(){
         return(
             <Button onClick={(e)=>
-            this.handleClik(e)}>
+            this.handleClick(e)}>
             Camera
             </Button>
         )
