@@ -1,31 +1,11 @@
 {
-  "name": "mentalshortcuts",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://blooming-tor-31315.herokuapp.com/",
-  "dependencies": {
-    "react": "^16.0.0",
-    "react-bootstrap": "^0.31.3",
-    "react-dom": "^16.0.0",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
-    "redux": "^3.7.2"
-  },
-  
+  "name": "tgbot",
+  "version": "1.0.0",
+  "description": "Телеграмм бот для автоматических продаж с провекркой платежей через qiwi",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
-
-  "devDependencies": {
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.2",
-   
-
-    "react-test-renderer": "^16.0.0"
-  }
+  "author": "",
+  "license": "ISC"
 }
